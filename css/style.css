@@ -1,0 +1,1069 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #fff;
+  float: left;
+}
+
+.mainNav {
+  float: right;
+  margin-top: 15px;
+}
+.mainNav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+}
+.mainNav ul li a {
+  color: #f9e42e;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+.mobileMenu {
+  display: none;
+}
+.mobileMenu ul li {
+  display: none;
+}
+.mobileMenu ul li a {
+  display: none;
+}
+
+#hero {
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 32px;
+}
+
+#hero .logo {
+  color: #fff;
+}
+#hero h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px;
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
+#benefits {
+  padding: 100px 0 80px;
+}
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+#benefits p, #benefits ul {
+  width: 600px;
+}
+#benefits ul {
+  list-style: disc;
+  margin: 30px 0 0 80px;
+}
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 70px 0 70px;
+  color: #fff;
+}
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+}
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+#main {
+  margin-top: 80px;
+}
+#posts {
+  width: 700px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+#sidebar {
+  width: 240px;
+  display: inline-block;
+  vertical-align: top;
+}
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  margin-bottom: 30px;
+}
+.post p {
+  font-size: 24px;
+  line-height: 1.333;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#sidebar h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #043049;
+}
+#sidebar ul {
+  margin-bottom: 40px;
+}
+#sidebar ul li a {
+  color: #043049;
+  font-size: 24px;
+}
+#sidebar p {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+#sidebar img {
+  width: 100%;
+  border: 1px solid #DEDEDE;
+}
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #121212;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 68px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;
+}
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+
+
+
+/* RESPONSIVE - MOBILE */
+
+/* 1000px wide */
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+/* GLOBALS */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 43px;
+  font-weight: 800;
+}
+
+/* HEADER */
+header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #fff;
+  float: left;
+  padding-left: 20px;
+}
+
+/* MAIN NAV */
+.mainNav {
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.mainNav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 22px;
+}
+.mainNav ul li a {
+  color: #f9e42e;
+}
+
+/* MOBILE NAV */
+.hamburgerMenu {
+  display: none;
+}
+.mobileMenu {
+  display: none;
+}
+.mobileMenu ul li {
+  display: none;
+}
+.mobileMenu ul li a {
+  display: none;
+}
+
+/* HERO SECTION */
+#hero {
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 5px;
+}
+
+#hero .logo {
+  color: #fff;
+}
+#hero h2 {
+  font-size: 42px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px;
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 240px;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* BENEFITS SECTION*/
+#benefits {
+  padding: 50px 0 65px;
+  margin: 0 20px;
+}
+h3 {
+  color: #033048;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+#benefits p, #benefits ul {
+  font-size: 23px;
+  width: 95%;
+}
+#benefits ul {
+  list-style: disc;
+  margin: 30px 0 0 55px;
+}
+
+/* TESTIMONIAL SECTION */
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 50px 0 50px;
+  color: #fff;
+}
+blockquote {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+/* BLOG FORMATING */
+#main {
+  margin-top: 50px;
+}
+#posts {
+  width: 70%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: top;
+  float: left;
+}
+#sidebar {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  float: right;
+}
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.post p {
+  font-size: 19px;
+  line-height: 1.263;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 2px;
+  padding-right: 12px;
+  padding-left: 0px;
+  padding-bottom: 2px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 20px;
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#sidebar h3 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #043049;
+}
+#sidebar ul {
+  margin-bottom: 25px;
+}
+#sidebar ul li a {
+  color: #043049;
+  font-size: 20px;
+}
+#sidebar p {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+#sidebar img {
+  width: 100%;
+  border: 1px solid #DEDEDE;
+}
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+  clear: both;
+}
+
+footer {
+  background: #121212;
+  padding: 30px 0 25px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 30px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 45px;
+}
+footer p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+}
+
+
+
+
+
+
+/* 768px wide */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+/* GLOBALS */
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+/* MAIN NAV */
+.mainNav {
+  display: none;
+}
+
+/* MOBILE NAV */
+.hamburger {
+  color: #f9e42e;
+  font-size: 35px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  float: right;
+  padding-right: 20px;
+}
+
+.mobileMenu ul li {
+  float: right;
+  clear: both;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #f9e42e;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mobileMenu ul li a {
+  display: block;
+  color: #f9e42e;
+}
+
+.mobileMenu ul li:last-child {
+  display: block;
+  border-bottom: 0px;
+}
+
+/* HERO SECTION */
+#hero {
+  height: auto;
+  background: url(../images/header_bg.jpg) no-repeat top center cover #131e27;
+  padding: 62px 0;
+}
+
+#hero h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  margin: 35px 0;
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 160px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* BENEFITS SECTION */
+#benefits {
+  padding: 45px 0 55px 0;
+}
+
+h3 {
+  color: #033048;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+#benefits p, #benefits ul {
+  font-size: 20px;
+  width: 90%;
+  max-width: 768px;
+  margin: 0 20px;
+}
+
+#benefits ul {
+  margin: 25px 0 0 70px;
+}
+
+/* TESTIMONIAL SECTION */
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 40px 0 70px;
+  color: #fff;
+}
+
+blockquote {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 70%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+/* PART BLOG FORMATTING */
+#main {
+  margin-top: 30px;
+}
+#posts {
+  width: 93%;
+  max-width: 768px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: top;
+}
+#sidebar {
+  width: 90%;
+  margin: 0 20px;
+}
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  margin-bottom: 15px;
+}
+.post p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 48px;
+  line-height: 48px;
+  padding-top: 1px;
+  padding-right: 12px;
+  padding-left: 2px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 15px;
+}
+
+/* SIDEBAR */
+#sidebar h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  margin-left: 0;
+  color: #043049;
+}
+
+#sidebar ul {
+  margin-bottom: 20px;
+}
+
+#sidebar ul li {
+  line-height: 25px;
+}
+
+#sidebar ul li a {
+  color: #043049;
+  font-size: 18px;
+}
+
+#sidebar p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+#sidebar img {
+  display: none;
+}
+
+#bottom-cta {
+  padding: 25px;
+}
+
+
+/* FOOTER SECTION */
+footer {
+  background: #121212;
+  padding: 25px 0 45px;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 30px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 30px;
+}
+footer p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+}
+
+
+
+
+
+
+
+/* 480px wide */
+@media screen and (min-width: 300px) and (max-width: 480px) {
+
+/* GLOBALS */
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+/* MAIN NAV */
+.mainNav {
+  display: none;
+}
+
+/* MOBILE NAV */
+#hero {
+  width: 100%;
+  height: 350px;
+  background: url(../images/header_bg.jpg) no-repeat top center cover #131e27;
+  padding: 80px 0;
+}
+
+.hamburger {
+  color: #f9e42e;
+  font-size: 28px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  float: right;
+  padding-right: 20px;
+}
+
+.mobileMenu ul li {
+  float: right;
+  clear: both;
+  font-size: 17px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #f9e42e;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.mobileMenu ul li a {
+  display: block;
+  color: #f9e42e;
+}
+
+.mobileMenu ul li:last-child {
+  display: block;
+  border-bottom: 0px;
+}
+
+/* HERO SECTION */
+#hero h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 25px 20px;
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 6px 0;
+  width: 140px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* BENEFITS SECTION */
+#benefits {
+  padding: 25px 0 35px 0;
+}
+
+h3 {
+  color: #033048;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+#benefits p, #benefits ul {
+  font-size: 15px;
+  width: 80%;
+  max-width: 768px;
+  margin: 0 20px;
+}
+
+#benefits ul {
+  margin: 10px 0 0 40px;
+}
+
+/* TESTIMONIAL SECTION */
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 30px 0 50px;
+  color: #fff;
+}
+
+blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+/* PART BLOG FORMATTING */
+#main {
+  margin-top: 25px;
+}
+#posts {
+  width: 93%;
+  max-width: 480px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: top;
+}
+#sidebar {
+  width: 90%;
+  margin: 0 20px;
+}
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.post p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 44px;
+  line-height: 40px;
+  padding-top: 2px;
+  padding-right: 12px;
+  padding-left: 0px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* SIDEBAR */
+#sidebar h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  margin-left: 0;
+  color: #043049;
+}
+
+#sidebar ul {
+  margin-bottom: 20px;
+}
+
+#sidebar ul li {
+  line-height: 23px;
+}
+
+#sidebar ul li a {
+  color: #043049;
+  font-size: 16px;
+}
+
+#sidebar p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+#sidebar img {
+  display: none;
+}
+
+#bottom-cta {
+  padding: 15px;
+}
+
+
+/* FOOTER SECTION */
+footer {
+  background: #121212;
+  padding: 20px 0 30px 0;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: 20px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 16px 20px;
+}
+footer p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
